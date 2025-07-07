@@ -1,0 +1,18 @@
+
+[tool.poetry]
+name = "pubmed_paper_fetcher"
+version = "0.1.0"
+description = "CLI tool to fetch and export PubMed articles"
+authors = ["Your Name <your.email@example.com>"]
+packages = [{ include = "pubmed_paper_fetcher" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_paper_fetcher.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
